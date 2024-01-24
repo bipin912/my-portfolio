@@ -412,7 +412,7 @@ button:nth-child(1):hover{
         position: absolute;
         border-radius: 50%;
         top: 32%;
-        left: 83%;
+        left: 78%;
         transform: translate(-50%, -50%);
     
     }
@@ -465,7 +465,7 @@ button:nth-child(1):hover{
         font-size: 1.1rem;
         color: #fff;
         
-        margin: 2rem 0 3rem 0;
+        margin: 2.7rem 0 3.5rem 0;
         line-height: 1.8rem;
     }
     
