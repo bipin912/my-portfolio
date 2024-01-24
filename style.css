@@ -57,10 +57,9 @@
 }
 .navlist{
     display: flex;
-    gap: 2.5rem;
+    gap: 3.5rem;
     height: 15vh;
     width: 100%;
-    
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -368,15 +367,22 @@ button:nth-child(1):hover{
   
     .navlist {
       flex-direction: row;
-      height: auto;
+      margin-top: -1%;
+     
       position: relative;
       background: #262525;
       
+      gap: 1.7rem;
+      height: 15vh;
+      width: 100%;
+      
+      
       
     }
+   
   
     .navlist li {
-      margin-bottom: -1rem;
+      margin-bottom: 1.5rem;
       margin-top:1rem;
       
     }
@@ -396,7 +402,7 @@ button:nth-child(1):hover{
   
     .content {
       margin-left:1rem;
-      margin-top: 12rem;
+      margin-top: 4rem;
       margin-right: -.5rem;
       
       
