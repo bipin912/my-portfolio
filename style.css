@@ -216,7 +216,7 @@ button:nth-child(1):hover{
 .sub-menu-1 {
     display: none;
     position: absolute;
-    background: transparent;
+    background: #262525;
     
    
     padding: 0px; /* Add padding to create some space */
@@ -370,7 +370,7 @@ button:nth-child(1):hover{
       margin-top: -1%;
      
       position: relative;
-      background: #262525;
+      background: transparent;
       
       gap: 2.7rem;
       height: 15vh;
@@ -402,7 +402,7 @@ button:nth-child(1):hover{
   
     .content {
       margin-left:1rem;
-      margin-top: 4rem;
+      margin-top: 3rem;
       margin-right: -.5rem;
       
       
