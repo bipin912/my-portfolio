@@ -361,7 +361,7 @@ button:nth-child(1):hover{
 /* Adding media CSS at the end of  existing styles */
 
 
-@media (max-width: 576px) {
+@media (max-width: 557px) {
     body,html{
         background: #262525;
         margin: 0;
@@ -415,7 +415,8 @@ button:nth-child(1):hover{
         
         left: 50%;
         transform: translate(-50%, -50%);
-        top: 13%;
+        top: 11.5%;
+        
     
     }
   
@@ -540,7 +541,7 @@ button:nth-child(1):hover{
   
 }
 
-@media (max-width: 430px) {
+@media (max-width: 410px) {
     .design .circle{
         display: none;
     }
