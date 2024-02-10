@@ -541,8 +541,8 @@ button:nth-child(1):hover{
   
 }
 
-@media (max-width: 300px) {
+@media (max-width: 410px) {
     .design .circle{
-        
+        display: none;
     }
 }
