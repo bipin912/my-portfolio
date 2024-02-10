@@ -10,6 +10,8 @@
     font-family: "Poppins", sans-serif;
         
 }
+
+
 .portfolio-container{
     min-height: 100vh;
     width: 100%;
@@ -127,7 +129,7 @@
     font-size: 1.1rem;
     color: #fff;
     max-width: 38rem;
-    margin: 1.1rem 0 3rem 0;
+    margin: 0 0 3rem 0;
     line-height: 1.8rem;
 }
 .p-detail{
@@ -265,11 +267,17 @@ button:nth-child(1):hover{
     color: #5DB9EE;
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+
+
+@media screen and (max-width: 1286px) {
     .portfolio-container {
       flex-direction: column;
     }
-  
+
+   
     .navlist {
       flex-direction: row;
       height: auto;
@@ -311,11 +319,11 @@ button:nth-child(1):hover{
     }
   
     .design .circle:nth-child(1) {
-      width: 30%;
+      width: 22%;
     }
   
     .design .circle:nth-child(2) {
-      width: 30%;
+      width: 22%;
       
         
     }
@@ -353,7 +361,7 @@ button:nth-child(1):hover{
 /* Adding media CSS at the end of  existing styles */
 
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     body,html{
         background: #262525;
         margin: 0;
@@ -364,36 +372,28 @@ button:nth-child(1):hover{
       background: #262525;
       
     }
-  
-    .navlist {
-      flex-direction: row;
-      margin-top: -1%;
-     
-      position: relative;
-      background: transparent;
-      
-      gap: 2.7rem;
-      height: 15vh;
-      width: 100%;
-      
-      
-      
+    .navlist{
+        display: none;
     }
+
+
+   
    
   
-    .navlist li {
-      margin-bottom: 1.5rem;
-      margin-top:1rem;
-      
-    }
+    
   
     .left-container,
     .right-container {
       width: 100%;
+      position: relative;
     }
   
     .left-container {
-      padding: 3rem;
+      
+      display: flex;
+      flex-wrap: wrap;
+
+      
     }
   
     .right-container {
@@ -401,19 +401,21 @@ button:nth-child(1):hover{
     }
   
     .content {
-      margin-left:1rem;
-      margin-top: 3rem;
-      margin-right: -.5rem;
+        margin: 9rem 1rem 0 2rem;
+      
+      position:absolute;
       
       
     }
     .design .circle{
-        aspect-ratio: 1;
+     
+        
         position: absolute;
         border-radius: 50%;
-        top: 32%;
-        left: 78%;
+        
+        left: 50%;
         transform: translate(-50%, -50%);
+        top: 13%;
     
     }
   
@@ -436,7 +438,7 @@ button:nth-child(1):hover{
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        margin-left:-2rem;
+        margin-left:-1.5rem;
      }
     .icon .fa-brands{
         color : #bbb;
@@ -452,7 +454,7 @@ button:nth-child(1):hover{
     }
     .about-content{
         margin-left: 2rem;
-        margin-right: 3rem;
+        margin-right: 1rem;
         
     }
     .btn-container button{
@@ -465,12 +467,81 @@ button:nth-child(1):hover{
         font-size: 1.1rem;
         color: #fff;
         
-        margin: 2.7rem 0 3.5rem 0;
-        line-height: 1.8rem;
+        margin: 0 0 3.5rem 0;
+        /* line-height: 1.8rem; */
     }
-    
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 1rem; /* Adjust as needed */
+        right: 1.5rem; /* Adjust as needed */
+        z-index: 1000;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 1000;
+        
+    }
+
+    .hamburger-menu .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .navlist.open {
+        flex-direction: column;
+        
+        display: flex;
+        max-height: 2000px;
+        position: relative;
+        
+      
+        
+        background:#262525;
+        justify-content: right;
+        align-items:center;
+        z-index: 2;
+        top: 60px; /* Adjust this value based on your design */
+        right: 0rem;
+        
+        background: #262525;
+        
+       
+        
+    }
+
+    .navlist.open li {
+        display: block;
+        
+        
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        
+
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navlist.open .hamburger-menu .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+   
 
     
     
   
+}
+
+@media (max-width: 430px) {
+    .design .circle{
+        display: none;
+    }
 }

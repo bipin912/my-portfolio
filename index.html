@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="portfolio-container">
+        
         <ul class="navlist">
             <li><a href="#" class="active">Home</a></li>
             <li class="contact-dropdown"><a href="#">Contact</a>
@@ -27,6 +28,18 @@
             
     
         </ul>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+
+
+
+        </div>
+        
+
+
         <div class="left-container">
             <div class="icon">
                 <a href="https://www.facebook.com/bipin.khatri.397/" target="_blank">
@@ -46,7 +59,6 @@
             <div class="content">
                 <p class="intro">
                     Hi! I am <span>Bipin Poudel</span>
-                
                 </p>
                 <h1>Computer Engineer</h1>
                 <p class="detail">
@@ -72,6 +84,31 @@
 
 
     </div>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navList = document.querySelector('.navlist'); // Update this line to target .navvlist
+    
+        hamburgerMenu.addEventListener('click', function () {
+            navList.classList.toggle('open');
+        });
+    
+        // Close the navlist when clicking outside of it
+        document.addEventListener('click', function (event) {
+            const isNavlistClicked = navList.contains(event.target);
+            const isHamburgerClicked = hamburgerMenu.contains(event.target);
+    
+            if (!isNavlistClicked && !isHamburgerClicked) {
+                navList.classList.remove('open');
+            }
+        });
+    });
+
+    </script>
+    
+    
+
     <script>
         document.getElementById('downloadCV').addEventListener('click', function() {
             
